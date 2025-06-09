@@ -28,26 +28,35 @@
 <details>
     <summary>🗂️ Tabla de Contenido</summary>
 
-<!-- TOC -->
-- [](#)
-
-
+- [Celda Robótica de Llenado de Llantas](#celda-robótica-de-llenado-de-llantas)
+    - [Configuración con Dos Robots](#configuración-con-dos-robots)
+    - [Cálculos estimados del *Takt time*:](#cálculos-estimados-del-takt-time)
+  - [Celda Robótica de Inflado de Llantas](#celda-robótica-de-inflado-de-llantas)
+    - [1. Manipuladores Robóticos](#1-manipuladores-robóticos)
+    - [2. Elementos de Transporte y Posicionamiento](#2-elementos-de-transporte-y-posicionamiento)
+    - [3. Herramientas y Sensores](#3-herramientas-y-sensores)
+    - [4. Seguridad](#4-seguridad)
 
 </details>
 
 
 
-# Modulo de celda robotica 
 
-Uno de los procesos necesarios para el ensamble de nuestras patinetas es la estación de llenado de llantas. Las llantas son enviadas sin aire, principalmente por motivos de seguridad, ya que podrían romperse si se envían infladas. Además, las llantas infladas ocupan más espacio durante el transporte. Otro factor importante que requiere que las llantas se envíen desinfladas es la necesidad de calibrarlas con la presión específica estipulada en el manual. Este proceso lo realiza un operario pero considermoas que un robot será capaz de realizarlo.
+# Celda Robótica de Llenado de Llantas
+Un paso crucial en el ensamble de nuestras patinetas es el proceso de llenado de llantas. Las llantas se reciben desinfladas por varias razones de seguridad y logística: evitar rupturas durante el transporte, optimizar el espacio de almacenamiento, y permitir una calibración precisa de la presión según las especificaciones del manual. Actualmente, el llenado y calibración es realizado por un operario, pero hemos identificado que un sistema robotizado podría ejecutar esta tarea de manera más eficiente y precisa.
 
-Una de las referencias que utilizamos de llantas en nuestras scooters es la **Llanta 145/70-6**. La celda contaría con un método de alimentación aún en proceso de selección. Dependiendo de eso, se utilizaría **uno o dos robots** para la celda.
+Especificamente, se desea diseñar una celda róbotica para el porceso de llenado y calibración de la **Llanta 145/70-6**, una de nuestras referencias clave. La configuración exacta de esta celda, incluyendo el número de robots, dependerá del método final de alimentación del material, el cual aún está bajo evaluación.
 
-En el caso de utilizar **dos robots**, el proceso se dividiría así:
+Consideramos dos posibles escenarios para la automatización:
 
-* Un robot realizaría la **toma del material de alimentación de la celda** (llantas desinfladas).
-* Otro robot, con un **sistema de aire comprimido** y **sensores de presión**, realizaría la **acción de llenado y calibración**.
-* Finalmente, el robot de alimentación realizaría el proceso de **desalimentación** (llanta llena).
+### Configuración con Dos Robots
+
+Si optamos por una solución con dos robots, el proceso se distribuirá de la siguiente manera:
+
+* **Robot 1 (Manipulación de Material):** Se encargaría de la **toma inicial de las llantas desinfladas** de la estación de alimentación de la celda.
+* **Robot 2 (Llenado y Calibración):** Equipado con un **sistema de aire comprimido** y **sensores de presión**, este robot realizaría la tarea principal de **llenado y calibración de la llanta**.
+* **Robot 1 (Desalimentación):** Una vez que la llanta esté correctamente inflada, el primer robot volvería a intervenir para realizar la **desalimentación** de la llanta llena, trasladándola a la siguiente fase del proceso de ensamble.
+
 
 ### Cálculos estimados del *Takt time*:
 
