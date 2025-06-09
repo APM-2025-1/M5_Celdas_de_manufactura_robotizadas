@@ -41,7 +41,7 @@
 # Celda Robótica de Inflado de Llantas
 Un paso crucial en el ensamble de nuestras patinetas es el proceso de inflado de llantas. Las llantas se reciben desinfladas por varias razones de seguridad y logística: evitar rupturas durante el transporte, optimizar el espacio de almacenamiento, y permitir una calibración precisa de la presión según las especificaciones del manual. Actualmente, el proceso de inflar es realizado por un operario, pero hemos identificado que un sistema robotizado podría ejecutar esta tarea de manera más eficiente y precisa.
 
-Especificamente, se desea diseñar una celda róbotica para el prOceso de inflado y calibración de la **Llanta 145/70-6**, una de nuestras referencias clave. A continuación se describe la configuración de la celda róbotica diseñada.
+Especificamente, se desea diseñar una celda róbotica para el proceso de inflado y calibración de la **Llanta 145/70-6**, una de nuestras referencias clave. A continuación se describe la configuración de la celda róbotica diseñada.
 
 
 ## 1. Manipuladores Robóticos
