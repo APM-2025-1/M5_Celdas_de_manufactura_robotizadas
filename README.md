@@ -112,7 +112,7 @@ Especificamente, se desea diseñar una celda róbotica para el proceso de inflad
 * **Sensor de posición de vávula:**
 
   * Verifica que la válvula esté correctamente orientada antes del acople.
-  * Puede ser óptico o mecánico.
+  * Sensor mecánico tipo final de carrera palpador.
 
 ---
 
