@@ -51,14 +51,16 @@ Especificamente, se desea diseñar una celda róbotica para el proceso de inflad
 
 * **Robot 1 – Alimentación y desalimentación:**
 
-  * Toma llantas desinfladas desde la cinta transportadora.
-  * Entrega llantas infladas al área de salida.
-  * Equipado con pinza adaptable a llantas de diferentes tamaños.
+  * Consiste de un X-arm 6, permite la orientación de la llanta para dejar la boquilla en la ubicación necesaria.
+  * Toma llantas desinfladas desde el área de entrega de llantas.
+  * Entrega llantas infladas a la cinta transportadora.
+  * Equipado con un gripper magnetico para ajustarse facilmente a todos los tipos de llanta.
 
 * **Robot 2 – Inflado:**
 
+  * Consiste de un X-arm 5, similar tamaño del X-arm 6.
   * Posiciona la herramienta de inflado en la válvula.
-  * Mantiene la llanta en posición durante el proceso.
+  * Mantiene la boquilla en posición durante el proceso de inflado.
   * Integra herramienta neumática con acople automático y sensor de presión.
   
 ### 1.1.1. Cálculos estimados del *Takt time*:
@@ -93,8 +95,20 @@ Especificamente, se desea diseñar una celda róbotica para el proceso de inflad
 * **Sensor de presión:**
 
   * Monitorea la presión interna de la llanta en tiempo real.
-  * Envía señal de corte al alcanzar la presión objetivo.
+  * Sensor-transductor digital con salida 0-10V conectado al controlador del robot.
+    
 
+* **X-arm Gripper:**
+  
+  * Servo gripper compatible con el controlador de los X-arm.
+  * Masa de 1.1 Kg
+
+* **Gripper magnético:**
+  
+  * referencia MHM-32TFD1-M9NLS.
+  * Para montaje de costado con 3m de cable.
+  * Control compatible con el controlador del robot
+  
 * **Sensor de posición de vávula:**
 
   * Verifica que la válvula esté correctamente orientada antes del acople.
