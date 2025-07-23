@@ -117,15 +117,29 @@ Especificamente, se desea diseñar una celda róbotica para el proceso de inflad
 ---
 
 ## 1.4. 🦺 Seguridad
+Análisis de los 10 posibles peligros al trabajar con una celda robótica
+1. Atrapamiento de persona entre el robot y la estructura fija
+2. Golpe por movimiento inesperado del robot
+3. Pinchazo o corte por el inflador o boquilla
+4. Explosión de la llanta por sobrepresión
+5. Descarga eléctrica por mal aislamiento
+6. Caída de la llanta durante la manipulación
+7. Falla del gripper o sujeción de la llanta
+8. Acceso no autorizado durante operación
+9. Fuga de aire comprimido
+10. Caída por tropiezos
 
 * **Cercas de Seguridad:**
   Estructuras físicas que delimitan el perímetro de la celda, evitan el acceso no autorizado y protegen contra movimientos inesperados del robot o posibles fallos durante el inflado.
 
-* **Cortinas de luz o escáner láser:**
+* **Barrera láser:**
   Detectan la presencia humana dentro de la celda. Su activación detiene automáticamente los movimientos robóticos.
 
 * **Botones de emergencia:**
   Distribuidos estratégicamente alrededor de la celda para permitir una detención inmediata del proceso en caso de incidente.
+
+* **Sensor de presión:**
+  Para evitar sobrellenado de las llantas, de esta manera evitando explosiones.
 
 
 
